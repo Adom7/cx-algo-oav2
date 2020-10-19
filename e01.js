@@ -1,9 +1,10 @@
-var tab = [ 5, 1, 4, 2, 8]
-console.log(tab)
-console.log(tab.length)
+var tab = [ 5, 1, 4, 2, 8] // [0,1,2,3,4]
+// console.log(tab)
+// console.log(tab.length)
 function check(tableau){
     var a = tableau.length-1;
-    for (let i=0; i< a ; i++){
+    for (let j=0; j< a ; j++){
+        for (let i=0; i< a ; i++){
         if (tableau[i] > tableau[i+1]) {
             var b = tableau[i]
             tableau[i] = tableau[i+1]
@@ -12,9 +13,9 @@ function check(tableau){
             
         }
     }
-    console.log(tab)
+    // console.log(tab)
+}
+// return tableau
 };
-
-console.log(check(tab));
-console.log(check(tab));
-
+check(tab);
+console.log(tab)
